@@ -2679,6 +2679,64 @@
 
     <!-- ===== JAVASCRIPT ===== -->
     <script>
+        // Carregar dados.json automaticamente ao abrir a página
+async function carregarDadosJsonAutomatico() {
+  try {
+    const response = await fetch('dados.json');
+    if (!response.ok) {
+      throw new Error('Erro ao carregar dados.json: ' + response.status);
+    }
+    const data = await response.json();
+
+    // Abre o IndexedDB (ajuste o nome da função se for diferente)
+    const db = await new Promise((resolve, reject) => {
+      const request = indexedDB.open('NutriBalanceDB', 1); // ajuste o nome do DB e versão se necessário
+      request.onsuccess = () => resolve(request.result);
+      request.onerror = () => reject(request.error);
+    });
+
+    const tx = db.transaction(['products', 'combos', 'clients', 'orders', 'users', 'settings'], 'readwrite');
+
+    // Limpa e popula cada store com os dados do JSON
+    const stores = {
+      products: data.products || [],
+      combos: data.combos || [],
+      clients: data.clients || [],
+      orders: data.orders || [],
+      users: data.users || [],
+      settings: data.settings ? [data.settings] : []  // settings pode ser array ou objeto único
+    };
+
+    for (const [storeName, items] of Object.entries(stores)) {
+      const store = tx.objectStore(storeName);
+      await store.clear();  // limpa dados antigos
+      items.forEach(item => {
+        if (item.id) store.put(item);  // usa put para upsert (atualiza se id existir)
+        else store.add(item);  // ou add se não tem id
+      });
+    }
+
+    await tx.done;
+    console.log('Dados de dados.json carregados com sucesso!');
+
+    // Recarrega a interface (chame suas funções de render)
+    if (typeof loadMenu === 'function') loadMenu();
+    if (typeof renderProducts === 'function') renderProducts();
+    if (typeof updateCart === 'function') updateCart();
+    if (typeof loadClients === 'function') loadClients();
+    if (typeof initApp === 'function') initApp();  // ou refreshAll(), loadAllData(), etc.
+    location.reload();  // recarrega a página para mostrar tudo atualizado (opcional, mas eficaz)
+
+  } catch (error) {
+    console.error('Falha ao carregar dados.json:', error);
+    // Opcional: alerta ou fallback para dados vazios/hardcoded
+    alert('Não foi possível carregar os dados atualizados. Verifique o console.');
+  }
+}
+
+// Executa imediatamente ao carregar a página
+carregarDadosJsonAutomatico();
+        
         // ===== CONFIGURAÇÃO INICIAL =====
         let currentLanguage = 'es';
         let cart = [];
@@ -5419,3 +5477,4 @@
     </script>
 </body>
 </html>
+
