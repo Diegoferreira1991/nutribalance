@@ -1,0 +1,258 @@
+{
+  "settings": [
+    {
+      "id": "app_settings",
+      "businessName": "NutriBalance",
+      "whatsappNumber": "591 71312017",
+      "contactEmail": "hola@nutribalance.com",
+      "deliveryPrice": null,
+      "deliveryText": "Calcular via WhatsApp",
+      "currencySymbol": "Bs",
+      "heroImages": {
+        "carne": "https://i.imgur.com/JWromlk.jpeg",
+        "frango": "https://i.imgur.com/gA5kNKn.jpeg",
+        "carneText": "",
+        "frangoText": ""
+      },
+      "qrCode": {
+        "image": "https://i.imgur.com/5SEFa9j.jpeg",
+        "pixCode": ""
+      },
+      "storeInfo": {
+        "footerDescription": "Tu equilibrio nutricional entregado en casa",
+        "instagram": "",
+        "facebook": "",
+        "tiktok": "",
+        "address": "Santa Cruz de la Sierra, Bolivia"
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "type": "product",
+      "nameEs": "Carne Molida 100gr",
+      "namePt": "Carne Moída 100gr",
+      "descriptionEs": "carne molida sabrosa",
+      "descriptionPt": "carne moida saudavel e fit",
+      "price": 15,
+      "calories": 450,
+      "protein": 30,
+      "carbs": 5,
+      "fat": 15,
+      "imageUrl": "https://i.imgur.com/WbV7moq.png",
+      "category": "carne"
+    },
+    {
+      "id": 2,
+      "type": "product",
+      "nameEs": "Pollo en Cubitos 100gr",
+      "namePt": "Frango em cobinhos 100gr",
+      "descriptionEs": "Pechuga en cubitos sabrosos",
+      "descriptionPt": "Peito de Frango em cubinhos 100gr",
+      "price": 15,
+      "calories": 420,
+      "protein": 30,
+      "carbs": 5,
+      "fat": 8,
+      "imageUrl": "https://i.imgur.com/QfmEPqX.png",
+      "category": "pollo"
+    },
+    {
+      "id": 3,
+      "type": "product",
+      "nameEs": "Pescado en Cubitos 100gr",
+      "namePt": "Peixe em Cubinhos 100gr",
+      "descriptionEs": "Pescados sabrosos y jugosos, frescos, fuente de proteínas e ideales para tu dieta.",
+      "descriptionPt": "Peixes saborosos e suculentos frescos fonte de proteínas e ideal pra sua dieta",
+      "price": 22,
+      "calories": 500,
+      "protein": 30,
+      "carbs": 6,
+      "fat": 5,
+      "imageUrl": "https://i.imgur.com/UqubfPU.png",
+      "category": "carne"
+    }
+  ],
+  "combos": [
+    {
+      "id": 4,
+      "type": "combo",
+      "nameEs": "Combo 8 pescado en trozos",
+      "namePt": "Combo 8 Peixe em pedaços",
+      "descriptionEs": "8 Bandejas de pescado, preparadas con cuidado, ligeras y sabrosas, ricas en proteínas de alta calidad, ideales para quienes buscan una alimentación saludable, práctica y equilibrada en el día a día.",
+      "descriptionPt": "8 marmitas de peixe, preparadas com cuidado, leves e saborosas, ricas em proteínas de alta qualidade, ideais para quem busca uma alimentação saudável, prática e equilibrada no dia a dia.",
+      "price": 175,
+      "calories": 4000,
+      "protein": 216,
+      "carbs": 32,
+      "fat": 56,
+      "imageUrl": "https://i.imgur.com/z5zX8HJ.png",
+      "category": "carne"
+    },
+    {
+      "id": 101,
+      "type": "combo",
+      "nameEs": "Combo 10 Pollo en Cubos",
+      "namePt": "Combo 10 Frango em Cubos",
+      "descriptionEs": "10 Bandejas de Pollo con 100gr cada una.\nIdeal para usted que busca practicidad.",
+      "descriptionPt": "10 Marmitas de Frango com 100gr cada uma.\nIdeal pra você que busca praticidade",
+      "price": 150,
+      "calories": 3000,
+      "protein": 300,
+      "carbs": 50,
+      "fat": 50,
+      "imageUrl": "https://i.imgur.com/KbiyPtO.jpeg",
+      "category": "carne"
+    },
+    {
+      "id": 102,
+      "type": "combo",
+      "nameEs": "Combo 10 Carne Molida",
+      "namePt": "Combo 10 Carne Moída",
+      "descriptionEs": "10 marmitas de carne molida, cuidadosamente preparadas, ricas en sabor y proteína, pensadas para facilitar tu día a día con una alimentación práctica y equilibrada.",
+      "descriptionPt": "10 marmitas de carne moída, cuidadosamente preparadas, ricas em sabor e proteína, pensadas para facilitar o seu dia a dia com uma alimentação prática e equilibrada.",
+      "price": 150,
+      "calories": 4000,
+      "protein": 300,
+      "carbs": 55,
+      "fat": 70,
+      "imageUrl": "https://i.imgur.com/3gNWsRu.jpeg",
+      "category": "carne"
+    }
+  ],
+  "clients": [
+    {
+      "name": "diego ferreira",
+      "email": "diegoferreira1991@gmail.com",
+      "phone": "24998450333",
+      "birthday": "1991-01-03",
+      "password": "diego456123",
+      "registrationDate": "2026-02-10T18:07:44.761Z",
+      "totalOrders": 2,
+      "totalSpent": 67,
+      "lastOrderDate": "2026-02-10T18:21:43.204Z",
+      "id": 1
+    },
+    {
+      "name": "gladyz estarda",
+      "email": "gladyznay@gimail.com",
+      "phone": "71312017",
+      "birthday": "1991-01-10",
+      "password": "123456",
+      "registrationDate": "2026-02-11T16:15:47.852Z",
+      "totalOrders": 1,
+      "totalSpent": 67,
+      "lastOrderDate": "2026-02-11T16:21:45.290Z",
+      "id": 2
+    }
+  ],
+  "orders": [
+    {
+      "clientId": 1,
+      "clientName": "diego ferreira",
+      "items": [
+        {
+          "id": 2,
+          "name": "Pollo en Cubitos 100gr",
+          "price": 15,
+          "type": "product",
+          "quantity": 1
+        },
+        {
+          "id": 1,
+          "name": "Carne Molida 100gr",
+          "price": 15,
+          "type": "product",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 30,
+      "delivery": 0,
+      "total": 30,
+      "deliveryAddress": "rua santa catarina 426 são jorge pinheiral RJ",
+      "date": "2026-02-10T18:08:42.194Z",
+      "status": "pending",
+      "id": 1
+    },
+    {
+      "clientId": 1,
+      "clientName": "diego ferreira",
+      "items": [
+        {
+          "id": 2,
+          "name": "Pollo en Cubitos 100gr",
+          "price": 15,
+          "type": "product",
+          "quantity": 1
+        },
+        {
+          "id": 3,
+          "name": "Pescado en Cubitos 100gr",
+          "price": 22,
+          "type": "product",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 37,
+      "delivery": 0,
+      "total": 37,
+      "deliveryAddress": "rua santa catarina 426 são jorge pinheiral RJ",
+      "date": "2026-02-10T18:21:43.203Z",
+      "status": "pending",
+      "id": 2
+    },
+    {
+      "clientId": 2,
+      "clientName": "gladyz estarda",
+      "items": [
+        {
+          "id": 1,
+          "name": "Carne Molida 100gr",
+          "price": 15,
+          "type": "product",
+          "quantity": 3,
+          "imageUrl": "https://i.imgur.com/WbV7moq.png"
+        },
+        {
+          "id": 3,
+          "name": "Pescado en Cubitos 100gr",
+          "price": 22,
+          "type": "product",
+          "quantity": 1,
+          "imageUrl": "https://i.imgur.com/UqubfPU.png"
+        }
+      ],
+      "subtotal": 67,
+      "delivery": 0,
+      "total": 67,
+      "deliveryAddress": "calle 7 ",
+      "date": "2026-02-11T16:21:45.286Z",
+      "status": "pending",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "type": "client",
+      "name": "diego ferreira",
+      "email": "diegoferreira1991@gmail.com",
+      "clientId": 1
+    },
+    {
+      "id": 2,
+      "type": "client",
+      "name": "gladyz estarda",
+      "email": "gladyznay@gimail.com",
+      "clientId": 2
+    },
+    {
+      "id": "admin",
+      "type": "admin",
+      "name": "Administrador"
+    }
+  ],
+  "exportDate": "2026-02-11T19:43:27.600Z",
+  "version": 4
+}
